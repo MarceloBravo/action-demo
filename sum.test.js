@@ -16,3 +16,10 @@ test('Suma dos números', () => {
 test('Suma de números negativos', () => {
  expect(sum(-1, -2)).toBe(-3);
 });
+
+/**
+ * Prueba unitaria para verificar la suma de números fraccionarios.
+ */
+test('Suma de números fraccionarios', () => {
+  expect(sum(0.1, 0.2)).toBeCloseTo(0.3);
+});
