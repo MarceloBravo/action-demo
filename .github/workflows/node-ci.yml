@@ -21,4 +21,4 @@ jobs:
       - name: Ver entorno
         env:
           NODE_ENV: ${{ secrets.NODE_ENV }}
-        run: echo "Entorno actual: $NODE_ENV"
+        run: echo "Entorno actual: ${{ secrets.NODE_ENV }}"
