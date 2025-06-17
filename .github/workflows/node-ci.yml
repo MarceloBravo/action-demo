@@ -19,6 +19,6 @@ jobs:
       - name: Ejecutar pruebas
         run: npm test
       - name: Ver entorno
-        run: echo "Entorno actual: ${NODE_ENV}"
         env:
           NODE_ENV: ${{ secrets.NODE_ENV }}
+        run: echo NODE_ENV
